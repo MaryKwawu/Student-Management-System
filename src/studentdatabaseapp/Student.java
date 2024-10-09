@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Student {
     String firstName;
-    String secondName;
+    String lastName;
     int studentGradeYear;
-    int studentId;
+    String studentId;
     String[] studentCourses;
     int studentTuitionBalance;
     static int costOfCourse = 600;
@@ -23,11 +23,21 @@ public class Student {
         this.firstName = scanner.nextLine();
 
         System.out.println("Enter student second name: ");
-        this.secondName = scanner.nextLine();
+        this.lastName = scanner.nextLine();
 
-        System.out.println("1 - Freshmen\n2 - for  Sophomore\n3 - Junior\n4 - Senior\n5 Enter student class level: ");
+        System.out.println("1 - Freshmen\n2 - for  Sophomore\n3 - Junior\n4 - Senior\nEnter student class level: ");
         this.studentGradeYear = scanner.nextInt();
-        System.out.println(firstName + " " + secondName + " " + studentGradeYear);
+
+
+        setStudentID();
+        System.out.println(firstName + " " + lastName + " " + studentGradeYear + " " +studentId);
+    }
+
+    //Generate an id
+    private void setStudentID() {
+        //studentGradeYear + ID
+        id++;
+        this.studentId = studentGradeYear + " " + id;
     }
 
     //Enroll in courses

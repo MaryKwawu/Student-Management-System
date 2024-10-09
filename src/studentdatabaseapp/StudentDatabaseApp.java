@@ -5,7 +5,6 @@ public class StudentDatabaseApp {
         Student student = new Student();
         //Ask how many users we want to add
 
-
         //create n number of students
 
     }
