@@ -84,4 +84,11 @@ public class Student {
         System.out.println("Your balance is: $" + studentTuitionBalance);
     }
 
+
+    //pay tuition
+    public void payTuition(int payment){
+        studentTuitionBalance = studentTuitionBalance - payment;
+        System.out.println("Thank you for your payment of $" + payment);
+        viewBalance();
+    }
 }
