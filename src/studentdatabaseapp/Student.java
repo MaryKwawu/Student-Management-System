@@ -77,4 +77,11 @@ public class Student {
 
         System.out.println("TUITION BALANCE: " + studentTuitionBalance);
     }
+
+
+    //view balance
+    public void viewBalance(){
+        System.out.println("Your balance is: $" + studentTuitionBalance);
+    }
+
 }
