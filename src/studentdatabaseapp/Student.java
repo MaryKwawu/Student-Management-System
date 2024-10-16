@@ -32,7 +32,6 @@ public class Student {
 
         // Initialize studentCourses
         studentCourses = new String[0];
-        System.out.println(firstName + " " + lastName + " " + studentGradeYear + " " + studentID);
     }
 
     // Generate an ID
@@ -69,7 +68,6 @@ public class Student {
 
         // Print enrolled courses on separate lines
         if (studentCourses != null && studentCourses.length > 0) {
-            System.out.println("ENROLLED IN:");
             for (int i = 0; i < studentCourses.length; i++) {
                 if (studentCourses[i] != null && !studentCourses[i].isEmpty()) {
                     System.out.println(studentCourses[i]);
@@ -99,6 +97,6 @@ public class Student {
 
     //show status
     public String toString(){
-        return "Name: " + firstName + " " + lastName + "\nCourses Enrolled: "  + (Arrays.toString(studentCourses)) + "\nBalance: $" + studentTuitionBalance;
+        return "Name: " + firstName + " " + lastName +"\nGrade Level: " + studentGradeYear + "\nStudent ID: " + studentID +  "\nCourses Enrolled: "  + (Arrays.toString(studentCourses)) + "\nBalance: $" + studentTuitionBalance;
     }
 }
