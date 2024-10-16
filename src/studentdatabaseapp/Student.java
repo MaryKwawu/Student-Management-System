@@ -1,5 +1,7 @@
 package studentdatabaseapp;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Student {
@@ -97,6 +99,6 @@ public class Student {
 
     //show status
     public String toString(){
-        return "Name: " + firstName + " " + lastName + "\nCourses Enrolled: " + "\nBalance: $" + studentTuitionBalance;
+        return "Name: " + firstName + " " + lastName + "\nCourses Enrolled: "  + (Arrays.toString(studentCourses)) + "\nBalance: $" + studentTuitionBalance;
     }
 }
